@@ -123,7 +123,7 @@ function draw(){
     gameOver.visible = true;
     restart.visible = true;
 
-    if(mousePressedOver(restart)){
+    if(mousePressedOver(restart) || touches.length > 0){
       reset();
     }
 
